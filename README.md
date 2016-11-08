@@ -1,27 +1,23 @@
 # ember-assign-helper
 
-This README outlines the details of collaborating on this Ember addon.
+This addon provides only **one** useful helper for using it in your templates.
+
+Example usage:
+
+```hbs
+{{my-component data=(assign myObject1 myObject2 ... myObjectN)}}
+```
+
+```hbs
+{{yield (assign publicAPI (hash button=(component "my-button"))}}
+```
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-assign-helper`
-* `npm install`
-* `bower install`
+`ember install ember-assign-helper`
 
-## Running
+## Compatibility
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+It is compatible with Ember 2.5+ because it's the version of Ember in which `Ember.assign` was introduced.
+However, it fallbacks to `Object.assign` if `Ember.assign` is not present, which means that even if you
+are in a version of Ember < 2.5 it will work in modern browsers.

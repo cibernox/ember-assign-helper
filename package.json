@@ -1,9 +1,11 @@
 {
   "name": "ember-assign-helper",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "Simple {{assign}} helper for Ember",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "assign",
+    "helper"
   ],
   "license": "MIT",
   "author": "",
@@ -40,7 +42,6 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "ember-welcome-page": "^1.0.3",
     "loader.js": "^4.0.10"
   },
   "engines": {
