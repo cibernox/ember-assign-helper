@@ -1,9 +1,8 @@
-import Ember from 'ember';
-
-const eAssign = Ember.assign || Object.assign;
+import { assign as oAssign } from '@ember/polyfills'
+import { helper as buildHelper } from "@ember/component/helper";
 
 export function assign(params) {
-  return eAssign({}, ...params);
+  return oAssign({}, ...params);
 }
 
-export default Ember.Helper.helper(assign);
+export default buildHelper(assign);
