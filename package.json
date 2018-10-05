@@ -7,7 +7,7 @@
     "assign",
     "helper"
   ],
-  "repository": "",
+  "repository": "github:cibernox/ember-assign-helper",
   "license": "MIT",
   "author": "",
   "directories": {
