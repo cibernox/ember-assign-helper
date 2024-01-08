@@ -5,14 +5,14 @@
     "url": "http://github.com/cibernox/ember-assign-helper.git"
   },
   "license": "MIT",
-  "author": "",
+  "author": "Miguel Camba",
   "scripts": {
-    "build": "pnpm run --filter ember-basic-dropdown build",
+    "build": "pnpm run --filter ember-assign-helper build",
     "build:docs": "pnpm run --filter docs build",
     "lint": "pnpm run --filter '*' lint",
     "lint:fix": "pnpm run --filter '*' lint:fix",
     "start": "concurrently 'npm:start:*' --restart-after 5000 --prefix-colors cyan,white,yellow",
-    "start:addon": "pnpm run --filter ember-basic-dropdown start --no-watch.clearScreen",
+    "start:addon": "pnpm run --filter ember-assign-helper start --no-watch.clearScreen",
     "start:docs": "pnpm run --filter docs start --preserveWatchOutput",
     "start:test-app": "pnpm run --filter test-app start"
   },
