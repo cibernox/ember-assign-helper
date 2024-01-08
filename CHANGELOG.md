@@ -1,0 +1,1 @@
+ember-assign-helper/CHANGELOG.md
