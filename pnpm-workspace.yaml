@@ -1,0 +1,3 @@
+packages:
+  - 'ember-assign-helper'
+  - 'test-app'
