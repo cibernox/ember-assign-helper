@@ -16,7 +16,7 @@
     "start:docs": "pnpm run --filter docs start --preserveWatchOutput",
     "start:test-app": "pnpm run --filter test-app start"
   },
-  "packageManager": "pnpm@10.0.0",
+  "packageManager": "pnpm@10.10.0",
   "devDependencies": {
     "@release-it-plugins/lerna-changelog": "^6.0.0",
     "@release-it-plugins/workspaces": "^4.0.0",
