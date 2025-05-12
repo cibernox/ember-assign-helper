@@ -13,19 +13,18 @@
   "scripts": {
     "build": "ember build --environment=production",
     "format": "prettier . --cache --write",
-    "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
-    "lint:css": "stylelint \"**/*.css\" --allow-empty-input",
-    "lint:css:fix": "concurrently \"npm:lint:css -- --fix\"",
-    "lint:fix": "concurrently \"npm:lint:*:fix\" --names \"fix:\" --prefixColors auto && npm run format",
+    "lint": "concurrently \"pnpm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "concurrently \"pnpm:lint:css -- --fix\"",
+    "lint:fix": "concurrently \"pnpm:lint:*:fix\" --names \"fix:\" --prefixColors auto && pnpm format",
     "lint:format": "prettier . --cache --check",
     "lint:hbs": "ember-template-lint .",
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
-    "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\" --prefixColors auto",
-    "test:ember": "ember test",
-    "test:ember-try": "ember try:one"
+    "test": "concurrently \"pnpm:lint\" \"pnpm:test:*\" --names \"lint,test:\" --prefixColors auto",
+    "test:ember": "ember test"
   },
   "devDependencies": {
     "@babel/core": "^7.27.1",
@@ -34,12 +33,13 @@
     "@ember/optional-features": "^2.2.0",
     "@ember/test-helpers": "^5.2.1",
     "@embroider/macros": "^1.17.2",
-    "@embroider/test-setup": "3.0.3",
+    "@embroider/test-setup": "^3.0.1",
     "@eslint/js": "^9.25.1",
     "@glimmer/component": "^2.0.0",
     "@glimmer/tracking": "^1.1.2",
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^9.1.2",
+    "ember-assign-helper": "workspace:*",
     "ember-auto-import": "^2.10.0",
     "ember-cli": "~6.4.0",
     "ember-cli-app-version": "^7.0.0",
@@ -83,8 +83,5 @@
   },
   "ember": {
     "edition": "octane"
-  },
-  "dependencies": {
-    "ember-assign-helper": "workspace:*"
   }
 }
