@@ -7,6 +7,7 @@ module.exports = function (defaults) {
     autoImport: {
       watchDependencies: ['ember-assign-helper'],
     },
+    // Add options here
   });
 
   const { maybeEmbroider } = require('@embroider/test-setup');
