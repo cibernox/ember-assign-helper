@@ -72,8 +72,5 @@
     "app-js": {
       "./helpers/assign.js": "./dist/_app_/helpers/assign.js"
     }
-  },
-  "peerDependencies": {
-    "ember-source": "^3.28.0 || ^4.0.0 || >=5.0.0"
   }
 }
